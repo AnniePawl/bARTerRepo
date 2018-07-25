@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		668EA98ABB5D5A472D541DF2 /* Pods_BarterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */; };
+		B81A54182107EC7700BD2D4A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81A54172107EC7700BD2D4A /* Login.storyboard */; };
+		B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F32107DDC500F19F6F /* AppDelegate.swift */; };
+		B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F52107DDC500F19F6F /* ViewController.swift */; };
+		B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5F72107DDC500F19F6F /* Main.storyboard */; };
+		B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FA2107DDC900F19F6F /* Assets.xcassets */; };
+		B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */; };
+		B892E9342107F66600730E8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892E9332107F66600730E8B /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58FF469BC3A970B6DB3F9C22 /* Pods-BarterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A54172107EC7700BD2D4A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B82AC5F02107DDC500F19F6F /* BarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82AC5F32107DDC500F19F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B82AC5F52107DDC500F19F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B82AC5F82107DDC500F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B82AC5FA2107DDC900F19F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B82AC5FD2107DDC900F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B82AC5FF2107DDC900F19F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B892E9332107F66600730E8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B82AC5ED2107DDC500F19F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668EA98ABB5D5A472D541DF2 /* Pods_BarterApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		436AA56B0A0146A6D6211C17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58FF469BC3A970B6DB3F9C22 /* Pods-BarterApp.debug.xcconfig */,
+				CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		614755BF865E0EA657764EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81A54162107EBF000BD2D4A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B82AC5F72107DDC500F19F6F /* Main.storyboard */,
+				B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */,
+				B81A54172107EC7700BD2D4A /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B81A54192107F04900BD2D4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B82AC5F52107DDC500F19F6F /* ViewController.swift */,
+				B892E9332107F66600730E8B /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B82AC5E72107DDC500F19F6F = {
+			isa = PBXGroup;
+			children = (
+				B82AC5F22107DDC500F19F6F /* BarterApp */,
+				B82AC5F12107DDC500F19F6F /* Products */,
+				436AA56B0A0146A6D6211C17 /* Pods */,
+				614755BF865E0EA657764EE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B82AC5F12107DDC500F19F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B82AC5F02107DDC500F19F6F /* BarterApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B82AC5F22107DDC500F19F6F /* BarterApp */ = {
+			isa = PBXGroup;
+			children = (
+				B81A54192107F04900BD2D4A /* Controllers */,
+				B81A54162107EBF000BD2D4A /* Storyboards */,
+				B82AC5F32107DDC500F19F6F /* AppDelegate.swift */,
+				B82AC5FA2107DDC900F19F6F /* Assets.xcassets */,
+				B82AC5FF2107DDC900F19F6F /* Info.plist */,
+			);
+			path = BarterApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B82AC5EF2107DDC500F19F6F /* BarterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82AC6022107DDC900F19F6F /* Build configuration list for PBXNativeTarget "BarterApp" */;
+			buildPhases = (
+				AFAD0CA35FEEA43900552120 /* [CP] Check Pods Manifest.lock */,
+				B82AC5EC2107DDC500F19F6F /* Sources */,
+				B82AC5ED2107DDC500F19F6F /* Frameworks */,
+				B82AC5EE2107DDC500F19F6F /* Resources */,
+				BBD79234760AAA4E1914D615 /* [CP] Embed Pods Frameworks */,
+				82877261C0240050F2D89EEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarterApp;
+			productName = BarterApp;
+			productReference = B82AC5F02107DDC500F19F6F /* BarterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B82AC5E82107DDC500F19F6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Anna Pawl";
+				TargetAttributes = {
+					B82AC5EF2107DDC500F19F6F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B82AC5EB2107DDC500F19F6F /* Build configuration list for PBXProject "BarterApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B82AC5E72107DDC500F19F6F;
+			productRefGroup = B82AC5F12107DDC500F19F6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B82AC5EF2107DDC500F19F6F /* BarterApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B82AC5EE2107DDC500F19F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81A54182107EC7700BD2D4A /* Login.storyboard in Resources */,
+				B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */,
+				B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */,
+				B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82877261C0240050F2D89EEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFAD0CA35FEEA43900552120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarterApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD79234760AAA4E1914D615 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B82AC5EC2107DDC500F19F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B892E9342107F66600730E8B /* LoginViewController.swift in Sources */,
+				B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */,
+				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B82AC5F72107DDC500F19F6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B82AC5F82107DDC500F19F6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B82AC5FD2107DDC900F19F6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B82AC6002107DDC900F19F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B82AC6012107DDC900F19F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B82AC6032107DDC900F19F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FF469BC3A970B6DB3F9C22 /* Pods-BarterApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YABH6MR2BU;
+				INFOPLIST_FILE = BarterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnnaPawl.BarterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B82AC6042107DDC900F19F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YABH6MR2BU;
+				INFOPLIST_FILE = BarterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AnnaPawl.BarterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B82AC5EB2107DDC500F19F6F /* Build configuration list for PBXProject "BarterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82AC6002107DDC900F19F6F /* Debug */,
+				B82AC6012107DDC900F19F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B82AC6022107DDC900F19F6F /* Build configuration list for PBXNativeTarget "BarterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82AC6032107DDC900F19F6F /* Debug */,
+				B82AC6042107DDC900F19F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B82AC5E82107DDC500F19F6F /* Project object */;
+}

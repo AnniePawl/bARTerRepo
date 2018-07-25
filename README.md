@@ -1,1 +1,2 @@
 # bARTerRepo
+Art Trading App
