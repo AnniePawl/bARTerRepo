@@ -7,18 +7,64 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseUI
+import FirebaseDatabase
+
+//to handle future namespace conflicts
+//will now use "FIRUser" instead of "User" to refer to FirebaseAuth.user
+typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
+  
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
+    @IBAction func loginRegister(_ sender: UIButton) {
+        print("button pressed")
+        //  Added below to access FUIAuth default, auth UI singleton, set FUIAuth's singleton delegate and present auth view controller
+        
+                guard let authUI = FUIAuth.defaultAuthUI()
+                    else { return }
+                authUI.delegate = self
+        
+                let authViewController = authUI.authViewController()
+                present(authViewController, animated: true)
+        }
 }
+
+
+//  Frist set LoginViewController to be a delegate of authUI, but LoginViewController hasn't conformed to the FUIAuthDelegate protocol. Added extension do fix
+//  Error Handling included 
+
+extension LoginViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        if let error = error {
+            assertionFailure("Error signing in: \(error.localizedDescription)")
+            return
+        }
+        //guarded b/c we can't go on if user is nil
+        guard let user = authDataResult?.user
+            else { return }
+        //relative path to get user info from database ("snapshot?)
+        let userRef = Database.database().reference().child("users").child(user.uid)
+        userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
+            if let _ = User(snapshot: snapshot) {
+                let storyboard = UIStoryboard(name: "Home", bundle: .main)
+                
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
+            } else {
+                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+            }
+        })
+       
+    }
+}
+
+

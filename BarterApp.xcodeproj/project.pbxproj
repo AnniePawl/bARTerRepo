@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		668EA98ABB5D5A472D541DF2 /* Pods_BarterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */; };
-		B81A54182107EC7700BD2D4A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81A54172107EC7700BD2D4A /* Login.storyboard */; };
+		B8258681210A876400EDDD99 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8258680210A876400EDDD99 /* UserService.swift */; };
+		B8258685210A917500EDDD99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8258684210A917500EDDD99 /* Home.storyboard */; };
 		B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F32107DDC500F19F6F /* AppDelegate.swift */; };
 		B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F52107DDC500F19F6F /* ViewController.swift */; };
 		B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5F72107DDC500F19F6F /* Main.storyboard */; };
 		B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FA2107DDC900F19F6F /* Assets.xcassets */; };
 		B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */; };
+		B845792D21080C28002BBBE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B845792C21080C28002BBBE3 /* GoogleService-Info.plist */; };
 		B892E9342107F66600730E8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892E9332107F66600730E8B /* LoginViewController.swift */; };
+		B8942E3021092A6900DF210D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E2F21092A6900DF210D /* Users.swift */; };
+		B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58FF469BC3A970B6DB3F9C22 /* Pods-BarterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.debug.xcconfig"; sourceTree = "<group>"; };
 		91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B81A54172107EC7700BD2D4A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B8258680210A876400EDDD99 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B8258684210A917500EDDD99 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B82AC5F02107DDC500F19F6F /* BarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82AC5F32107DDC500F19F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B82AC5F52107DDC500F19F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +33,10 @@
 		B82AC5FA2107DDC900F19F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82AC5FD2107DDC900F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82AC5FF2107DDC900F19F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B845792C21080C28002BBBE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B892E9332107F66600730E8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B8942E2F21092A6900DF210D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +74,7 @@
 			children = (
 				B82AC5F72107DDC500F19F6F /* Main.storyboard */,
 				B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */,
-				B81A54172107EC7700BD2D4A /* Login.storyboard */,
+				B8258684210A917500EDDD99 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -76,8 +84,17 @@
 			children = (
 				B82AC5F52107DDC500F19F6F /* ViewController.swift */,
 				B892E9332107F66600730E8B /* LoginViewController.swift */,
+				B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B825867F210A874500EDDD99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B8258680210A876400EDDD99 /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B82AC5E72107DDC500F19F6F = {
@@ -101,13 +118,24 @@
 		B82AC5F22107DDC500F19F6F /* BarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B825867F210A874500EDDD99 /* Services */,
+				B8942E2E21092A5400DF210D /* Models */,
 				B81A54192107F04900BD2D4A /* Controllers */,
 				B81A54162107EBF000BD2D4A /* Storyboards */,
 				B82AC5F32107DDC500F19F6F /* AppDelegate.swift */,
 				B82AC5FA2107DDC900F19F6F /* Assets.xcassets */,
+				B845792C21080C28002BBBE3 /* GoogleService-Info.plist */,
 				B82AC5FF2107DDC900F19F6F /* Info.plist */,
 			);
 			path = BarterApp;
+			sourceTree = "<group>";
+		};
+		B8942E2E21092A5400DF210D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8942E2F21092A6900DF210D /* Users.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81A54182107EC7700BD2D4A /* Login.storyboard in Resources */,
 				B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */,
+				B8258685210A917500EDDD99 /* Home.storyboard in Resources */,
+				B845792D21080C28002BBBE3 /* GoogleService-Info.plist in Resources */,
 				B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */,
 				B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */,
 			);
@@ -248,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8942E3021092A6900DF210D /* Users.swift in Sources */,
 				B892E9342107F66600730E8B /* LoginViewController.swift in Sources */,
+				B8258681210A876400EDDD99 /* UserService.swift in Sources */,
 				B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */,
+				B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */,
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

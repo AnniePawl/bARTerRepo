@@ -176,6 +176,7 @@ static const CGFloat kTextFieldRightViewSize = 36.0f;
       }];
     }];
   } else {
+      
     [self.auth createUserAndRetrieveDataWithEmail:email
                                        password:password
                                      completion:^(FIRAuthDataResult *_Nullable authDataResult,
