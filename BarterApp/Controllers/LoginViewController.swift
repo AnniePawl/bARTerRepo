@@ -13,6 +13,7 @@ import FirebaseDatabase
 
 //to handle future namespace conflicts
 //will now use "FIRUser" instead of "User" to refer to FirebaseAuth.user
+
 typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController: UIViewController {
@@ -21,8 +22,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
     }
-  
-    
     @IBAction func loginRegister(_ sender: UIButton) {
         print("button pressed")
         //  Added below to access FUIAuth default, auth UI singleton, set FUIAuth's singleton delegate and present auth view controller
@@ -46,25 +45,20 @@ extension LoginViewController: FUIAuthDelegate {
             assertionFailure("Error signing in: \(error.localizedDescription)")
             return
         }
-        //guarded b/c we can't go on if user is nil
         guard let user = authDataResult?.user
             else { return }
-        //relative path to get user info from database ("snapshot?)
+
         let userRef = Database.database().reference().child("users").child(user.uid)
         userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
-            if let _ = User(snapshot: snapshot) {
-                let storyboard = UIStoryboard(name: "Home", bundle: .main)
-                
-                if let initialViewController = storyboard.instantiateInitialViewController() {
-                    self.view.window?.rootViewController = initialViewController
-                    self.view.window?.makeKeyAndVisible()
-                }
+            if let user = User(snapshot: snapshot) {
+                print("Welcome back, \(user.username).")
             } else {
                 self.performSegue(withIdentifier: "toCreateUsername", sender: self)
-            }
+                print("New user!")
+                }
         })
-       
     }
 }
+
 
 

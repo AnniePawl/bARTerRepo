@@ -23,7 +23,6 @@ class CreateUsernameViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
 
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         
