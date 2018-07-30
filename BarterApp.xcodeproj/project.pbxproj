@@ -21,6 +21,7 @@
 		B8942E3021092A6900DF210D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E2F21092A6900DF210D /* Users.swift */; };
 		B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */; };
 		B89C5B5D210FD69B00972634 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C5B5C210FD69B00972634 /* Constants.swift */; };
+		B89C5B60210FDC2300972634 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C5B5F210FDC2300972634 /* Storyboard+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B8942E2F21092A6900DF210D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		B89C5B5C210FD69B00972634 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B89C5B5F210FDC2300972634 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 		B82AC5F22107DDC500F19F6F /* BarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B89C5B5E210FDC0200972634 /* Extensions */,
 				B89C5B5B210FD66100972634 /* Supporting */,
 				B825867F210A874500EDDD99 /* Services */,
 				B8942E2E21092A5400DF210D /* Models */,
@@ -150,6 +153,14 @@
 				B89C5B5C210FD69B00972634 /* Constants.swift */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		B89C5B5E210FDC0200972634 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B89C5B5F210FDC2300972634 /* Storyboard+Utility.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */,
 				B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */,
 				B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */,
+				B89C5B60210FDC2300972634 /* Storyboard+Utility.swift in Sources */,
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
 				B89C5B5D210FD69B00972634 /* Constants.swift in Sources */,
 			);
