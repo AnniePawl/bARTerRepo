@@ -10,6 +10,7 @@
 		668EA98ABB5D5A472D541DF2 /* Pods_BarterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */; };
 		B8258681210A876400EDDD99 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8258680210A876400EDDD99 /* UserService.swift */; };
 		B8258685210A917500EDDD99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8258684210A917500EDDD99 /* Home.storyboard */; };
+		B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8258686210FB8B700EDDD99 /* HomeViewController.swift */; };
 		B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F32107DDC500F19F6F /* AppDelegate.swift */; };
 		B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F52107DDC500F19F6F /* ViewController.swift */; };
 		B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5F72107DDC500F19F6F /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		91F2C8A414C158285A6672EF /* Pods_BarterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8258680210A876400EDDD99 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B8258684210A917500EDDD99 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B8258686210FB8B700EDDD99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B82AC5F02107DDC500F19F6F /* BarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82AC5F32107DDC500F19F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B82AC5F52107DDC500F19F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				B82AC5F52107DDC500F19F6F /* ViewController.swift */,
 				B892E9332107F66600730E8B /* LoginViewController.swift */,
 				B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */,
+				B8258686210FB8B700EDDD99 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B8258681210A876400EDDD99 /* UserService.swift in Sources */,
 				B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */,
 				B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */,
+				B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */,
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
