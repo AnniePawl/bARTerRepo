@@ -14,6 +14,8 @@ import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
 
+
+
 //this struct will act as intermediary for communicating between app + Firebase.
 struct UserService {
     static func create(_ firUser: FIRUser, username: String, completion: @escaping (User?) -> Void) {
@@ -33,3 +35,5 @@ struct UserService {
         }
     }
 }
+
+
