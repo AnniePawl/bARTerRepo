@@ -32,7 +32,7 @@ class CreateUsernameViewController: UIViewController {
         UserService.create(firUser, username: username) { (user) in
             guard let user = user else { return }
             
-            let storyboard = UIStoryboard(name: "Main", bundle: .main)
+            let storyboard = UIStoryboard(name: "Home", bundle: .main)
             
             if let initialViewController = storyboard.instantiateInitialViewController() {
                 self.view.window?.rootViewController = initialViewController
