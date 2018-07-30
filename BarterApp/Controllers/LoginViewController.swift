@@ -50,9 +50,10 @@ extension LoginViewController: FUIAuthDelegate {
 
         let userRef = Database.database().reference().child("users").child(user.uid)
         userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
-            if let _ = User(snapshot: snapshot) {
-                let storyboard = UIStoryboard(name: "Home", bundle: .main)
+            if let user = User(snapshot: snapshot) {
+                 User.setCurrent(user)
                 
+                let storyboard = UIStoryboard(name: "Home", bundle: .main)
                 if let initialViewController = storyboard.instantiateInitialViewController() {
                     self.view.window?.rootViewController = initialViewController
                     self.view.window?.makeKeyAndVisible()
