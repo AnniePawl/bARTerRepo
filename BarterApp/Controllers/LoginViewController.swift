@@ -52,11 +52,10 @@ extension LoginViewController: FUIAuthDelegate {
         userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
             if let user = User(snapshot: snapshot) {
                  User.setCurrent(user)
+                let initialViewController = UIStoryboard.initialViewController(for: .home)
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
                 
-                let storyboard = UIStoryboard(name: "Home", bundle: .main)
-                if let initialViewController = storyboard.instantiateInitialViewController() {
-                    self.view.window?.rootViewController = initialViewController
-                }
             } else {
                 self.performSegue(withIdentifier: "toCreateUsername", sender: self)
                 print("New user!")
