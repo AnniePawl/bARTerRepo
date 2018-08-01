@@ -33,14 +33,14 @@
                     <view key="view" contentMode="scaleToFill" id="dxd-wJ-4wc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dv2-E9-efN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="profile" id="DfJ-qV-VYc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7R-oV-OVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="-976"/>
+            <point key="canvasLocation" x="840.79999999999995" y="-976.46176911544239"/>
         </scene>
         <!--messages-->
         <scene sceneID="Z6d-B8-09c">
