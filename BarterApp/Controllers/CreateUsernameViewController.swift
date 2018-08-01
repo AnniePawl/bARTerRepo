@@ -21,8 +21,7 @@ class CreateUsernameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
+        }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         guard let firUser = Auth.auth().currentUser,
@@ -41,20 +40,6 @@ class CreateUsernameViewController: UIViewController {
             print("Created new user: \(user.username)")
         }
     }
-
-//
-//
-//        UserService.create(firUser, username: username) { (user) in
-//            guard let user = user else { return }
-//
-//            print("Created new user: \(user.username)")
-//This is supposed to be in appDelegate?
-//            let storyboard = UIStoryboard(name: "Home", bundle: .main)
-//            if let initialViewController = storyboard.instantiateInitialViewController() {
-//                self.view.window?.rootViewController = initialViewController
-//                self.view.window?.makeKeyAndVisible()
-//            }
-//        }
     
         }
 

@@ -24,9 +24,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginRegister(_ sender: UIButton) {
         print("button pressed")
-        //  Added below to access FUIAuth default, auth UI singleton, set FUIAuth's singleton delegate and present auth view controller
-        
-                guard let authUI = FUIAuth.defaultAuthUI()
+                    guard let authUI = FUIAuth.defaultAuthUI()
                     else { return }
                 authUI.delegate = self
         
@@ -35,9 +33,6 @@ class LoginViewController: UIViewController {
         }
 }
 
-
-//  Frist set LoginViewController to be a delegate of authUI, but LoginViewController hasn't conformed to the FUIAuthDelegate protocol. Added extension do fix
-//  Error Handling included 
 
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {

@@ -50,11 +50,8 @@ class User: Codable {
                 UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentUser)
             }
         }
-        
         _current = user
     }
-    
-   
 }
 
 
