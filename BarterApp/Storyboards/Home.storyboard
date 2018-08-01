@@ -13,7 +13,7 @@
         <!--home-->
         <scene sceneID="6zY-sg-azc">
             <objects>
-                <viewController id="qaS-Cp-k78" customClass="HomeViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qaS-Cp-k78" customClass="HomePageViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Awp-af-875">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

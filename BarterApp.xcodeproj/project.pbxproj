@@ -82,8 +82,8 @@
 		B81A54162107EBF000BD2D4A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				B82AC5F72107DDC500F19F6F /* Main.storyboard */,
 				B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */,
+				B82AC5F72107DDC500F19F6F /* Main.storyboard */,
 				B8258684210A917500EDDD99 /* Home.storyboard */,
 			);
 			path = Storyboards;
@@ -92,9 +92,9 @@
 		B81A54192107F04900BD2D4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B8258686210FB8B700EDDD99 /* HomeViewController.swift */,
 				B892E9332107F66600730E8B /* LoginViewController.swift */,
 				B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */,
-				B8258686210FB8B700EDDD99 /* HomeViewController.swift */,
 				B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */,
 				B8453E412111679600BCEC01 /* ProfileViewController.swift */,
 				B8453E43211167C200BCEC01 /* MessagesViewController.swift */,
