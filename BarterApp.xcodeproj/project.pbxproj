@@ -12,10 +12,12 @@
 		B8258685210A917500EDDD99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8258684210A917500EDDD99 /* Home.storyboard */; };
 		B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8258686210FB8B700EDDD99 /* HomeViewController.swift */; };
 		B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F32107DDC500F19F6F /* AppDelegate.swift */; };
-		B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AC5F52107DDC500F19F6F /* ViewController.swift */; };
 		B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5F72107DDC500F19F6F /* Main.storyboard */; };
 		B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FA2107DDC900F19F6F /* Assets.xcassets */; };
 		B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */; };
+		B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */; };
+		B8453E422111679600BCEC01 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E412111679600BCEC01 /* ProfileViewController.swift */; };
+		B8453E44211167C200BCEC01 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E43211167C200BCEC01 /* MessagesViewController.swift */; };
 		B845792D21080C28002BBBE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B845792C21080C28002BBBE3 /* GoogleService-Info.plist */; };
 		B892E9342107F66600730E8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892E9332107F66600730E8B /* LoginViewController.swift */; };
 		B8942E3021092A6900DF210D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E2F21092A6900DF210D /* Users.swift */; };
@@ -32,11 +34,13 @@
 		B8258686210FB8B700EDDD99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B82AC5F02107DDC500F19F6F /* BarterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82AC5F32107DDC500F19F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B82AC5F52107DDC500F19F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B82AC5F82107DDC500F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B82AC5FA2107DDC900F19F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82AC5FD2107DDC900F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82AC5FF2107DDC900F19F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		B8453E412111679600BCEC01 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B8453E43211167C200BCEC01 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		B845792C21080C28002BBBE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B892E9332107F66600730E8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8942E2F21092A6900DF210D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
@@ -88,10 +92,12 @@
 		B81A54192107F04900BD2D4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B82AC5F52107DDC500F19F6F /* ViewController.swift */,
 				B892E9332107F66600730E8B /* LoginViewController.swift */,
 				B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */,
 				B8258686210FB8B700EDDD99 /* HomeViewController.swift */,
+				B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */,
+				B8453E412111679600BCEC01 /* ProfileViewController.swift */,
+				B8453E43211167C200BCEC01 /* MessagesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -304,12 +310,14 @@
 			files = (
 				B8942E3021092A6900DF210D /* Users.swift in Sources */,
 				B892E9342107F66600730E8B /* LoginViewController.swift in Sources */,
+				B8453E422111679600BCEC01 /* ProfileViewController.swift in Sources */,
+				B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */,
 				B8258681210A876400EDDD99 /* UserService.swift in Sources */,
-				B82AC5F62107DDC500F19F6F /* ViewController.swift in Sources */,
 				B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */,
 				B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */,
 				B89C5B60210FDC2300972634 /* Storyboard+Utility.swift in Sources */,
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
+				B8453E44211167C200BCEC01 /* MessagesViewController.swift in Sources */,
 				B89C5B5D210FD69B00972634 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
