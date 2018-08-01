@@ -13,7 +13,7 @@
         <!--home-->
         <scene sceneID="6zY-sg-azc">
             <objects>
-                <viewController id="qaS-Cp-k78" sceneMemberID="viewController">
+                <viewController id="qaS-Cp-k78" customClass="HomeViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Awp-af-875">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
         <!--profile-->
         <scene sceneID="Rtm-8w-HGq">
             <objects>
-                <viewController id="VCf-bw-13S" sceneMemberID="viewController">
+                <viewController id="VCf-bw-13S" customClass="ProfileViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxd-wJ-4wc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
         <!--messages-->
         <scene sceneID="Z6d-B8-09c">
             <objects>
-                <viewController id="pEC-7h-tmN" sceneMemberID="viewController">
+                <viewController id="pEC-7h-tmN" customClass="MessagesViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quz-Fi-kN6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
