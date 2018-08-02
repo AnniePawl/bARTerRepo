@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+import Firebase
+
+class MessagesViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}

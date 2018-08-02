@@ -11,7 +11,6 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-
 class CreateUsernameViewController: UIViewController {
     
     //IBOutlets

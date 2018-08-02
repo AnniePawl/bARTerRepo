@@ -15,6 +15,8 @@
 		B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5F72107DDC500F19F6F /* Main.storyboard */; };
 		B82AC5FB2107DDC900F19F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FA2107DDC900F19F6F /* Assets.xcassets */; };
 		B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */; };
+		B8316B9C21128AC70000280D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8316B9B21128AC70000280D /* Chat.swift */; };
+		B8316B9E21128B7D0000280D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8316B9D21128B7D0000280D /* Message.swift */; };
 		B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */; };
 		B8453E422111679600BCEC01 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E412111679600BCEC01 /* ProfileViewController.swift */; };
 		B8453E44211167C200BCEC01 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8453E43211167C200BCEC01 /* MessagesViewController.swift */; };
@@ -38,6 +40,8 @@
 		B82AC5FA2107DDC900F19F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82AC5FD2107DDC900F19F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82AC5FF2107DDC900F19F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8316B9B21128AC70000280D /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B8316B9D21128B7D0000280D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B8453E412111679600BCEC01 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B8453E43211167C200BCEC01 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				B8942E2F21092A6900DF210D /* Users.swift */,
+				B8316B9B21128AC70000280D /* Chat.swift */,
+				B8316B9D21128B7D0000280D /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8942E3021092A6900DF210D /* Users.swift in Sources */,
+				B8316B9C21128AC70000280D /* Chat.swift in Sources */,
 				B892E9342107F66600730E8B /* LoginViewController.swift in Sources */,
 				B8453E422111679600BCEC01 /* ProfileViewController.swift in Sources */,
 				B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */,
@@ -316,6 +323,7 @@
 				B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */,
 				B8258687210FB8B700EDDD99 /* HomeViewController.swift in Sources */,
 				B89C5B60210FDC2300972634 /* Storyboard+Utility.swift in Sources */,
+				B8316B9E21128B7D0000280D /* Message.swift in Sources */,
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
 				B8453E44211167C200BCEC01 /* MessagesViewController.swift in Sources */,
 				B89C5B5D210FD69B00972634 /* Constants.swift in Sources */,
