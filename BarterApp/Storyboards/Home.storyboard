@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W3W-8C-Tgl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="homeIcon" id="AtS-2o-7hT"/>
+                    <tabBarItem key="tabBarItem" tag="1" selectedImage="homeIcon" id="AtS-2o-7hT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRx-0Z-zIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q30-2P-6j5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QZm-bF-amJ"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Item" id="QZm-bF-amJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNl-AF-kIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,11 +1,11 @@
-////
-////  MainTabBarController.swift
-////  BarterApp
-////
-////  Created by Anna Pawl on 8/2/18.
-////  Copyright © 2018 Anna Pawl. All rights reserved.
-////
 //
+//  MainTabBarController.swift
+//  BarterApp
+//
+//  Created by Anna Pawl on 8/2/18.
+//  Copyright © 2018 Anna Pawl. All rights reserved.
+//
+
 //import Foundation
 //
 //class MainTabBarController: UITabBarController {
