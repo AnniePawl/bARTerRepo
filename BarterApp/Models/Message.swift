@@ -33,4 +33,11 @@ class Message {
         self.timestamp = Date(timeIntervalSince1970: timestamp)
         self.sender = User(uid: uid, username: username)
     }
+    
+    init(content: String) {
+        self.content = content
+        self.timestamp = Date()
+        self.sender = User.current
+    }
+    
 }

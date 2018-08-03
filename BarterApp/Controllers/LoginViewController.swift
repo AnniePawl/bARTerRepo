@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     
     }
     @IBAction func loginRegister(_ sender: UIButton) {
+        sender.pulsate()
         print("button pressed")
         //  Added below to access FUIAuth default, auth UI singleton, set FUIAuth's singleton delegate and present auth view controller
         
