@@ -24,6 +24,8 @@
 		B849CEE82113C22600B18B3F /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849CEE72113C22600B18B3F /* Animations.swift */; };
 		B849CEEA21142DEB00B18B3F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849CEE921142DEB00B18B3F /* StorageService.swift */; };
 		B849CEEC21142E3900B18B3F /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849CEEB21142E3900B18B3F /* PostService.swift */; };
+		B849CEEE21142F6000B18B3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849CEED21142F6000B18B3F /* MainTabBarController.swift */; };
+		B849CEF32114322200B18B3F /* BPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849CEF22114322200B18B3F /* BPhotoHelper.swift */; };
 		B892E9342107F66600730E8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892E9332107F66600730E8B /* LoginViewController.swift */; };
 		B8942E3021092A6900DF210D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E2F21092A6900DF210D /* Users.swift */; };
 		B8942E3221093EAF00DF210D /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */; };
@@ -52,6 +54,8 @@
 		B849CEE72113C22600B18B3F /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		B849CEE921142DEB00B18B3F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		B849CEEB21142E3900B18B3F /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		B849CEED21142F6000B18B3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B849CEF22114322200B18B3F /* BPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPhotoHelper.swift; sourceTree = "<group>"; };
 		B892E9332107F66600730E8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8942E2F21092A6900DF210D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B8942E3121093EAF00DF210D /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				B8453E3F2111677A00BCEC01 /* HomePageViewController.swift */,
 				B8453E412111679600BCEC01 /* ProfileViewController.swift */,
 				B8453E43211167C200BCEC01 /* MessagesViewController.swift */,
+				B849CEED21142F6000B18B3F /* MainTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		B82AC5F22107DDC500F19F6F /* BarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B849CEF12114317500B18B3F /* Helpers */,
 				B89C5B5E210FDC0200972634 /* Extensions */,
 				B89C5B5B210FD66100972634 /* Supporting */,
 				B825867F210A874500EDDD99 /* Services */,
@@ -155,6 +161,14 @@
 				B82AC5FF2107DDC900F19F6F /* Info.plist */,
 			);
 			path = BarterApp;
+			sourceTree = "<group>";
+		};
+		B849CEF12114317500B18B3F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B849CEF22114322200B18B3F /* BPhotoHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B8942E2E21092A5400DF210D /* Models */ = {
@@ -326,6 +340,7 @@
 				B8942E3021092A6900DF210D /* Users.swift in Sources */,
 				B8316B9C21128AC70000280D /* Chat.swift in Sources */,
 				B892E9342107F66600730E8B /* LoginViewController.swift in Sources */,
+				B849CEF32114322200B18B3F /* BPhotoHelper.swift in Sources */,
 				B849CEEC21142E3900B18B3F /* PostService.swift in Sources */,
 				B8453E422111679600BCEC01 /* ProfileViewController.swift in Sources */,
 				B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */,
@@ -339,6 +354,7 @@
 				B82AC5F42107DDC500F19F6F /* AppDelegate.swift in Sources */,
 				B8453E44211167C200BCEC01 /* MessagesViewController.swift in Sources */,
 				B89C5B5D210FD69B00972634 /* Constants.swift in Sources */,
+				B849CEEE21142F6000B18B3F /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -94,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="841" y="-976"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="ad9-Ap-eGP">
             <objects>
-                <tabBarController id="yEQ-Ts-8VO" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kBS-jS-dD2">
+                <tabBarController id="yEQ-Ts-8VO" customClass="MainTabBarController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kBS-jS-dD2" customClass="MainTabBarController" customModule="BarterApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
