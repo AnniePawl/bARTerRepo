@@ -78,20 +78,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-mv-Sct">
-                                <rect key="frame" x="90" y="482" width="194" height="30"/>
+                                <rect key="frame" x="90" y="128" width="194" height="30"/>
                                 <color key="backgroundColor" name="tcWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="create a username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-27-znh">
-                                <rect key="frame" x="61" y="425" width="252" height="35"/>
+                                <rect key="frame" x="61" y="68" width="252" height="35"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
                                 <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-zj-yKs">
-                                <rect key="frame" x="136" y="536" width="102" height="50"/>
+                                <rect key="frame" x="136" y="191" width="102" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="done!">
@@ -107,23 +107,18 @@
                                     <action selector="nextButtonTapped:" destination="j70-Sh-5MG" eventType="touchUpInside" id="1Qw-gA-3zC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="FPR-he-wsU">
-                                <rect key="frame" x="-14" y="45" width="402" height="363"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.67450980390000004" green="0.74117647060000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="bottom" secondItem="QUk-zj-yKs" secondAttribute="bottom" constant="81" id="0Jd-cq-EPL"/>
-                            <constraint firstItem="l38-27-znh" firstAttribute="top" secondItem="FPR-he-wsU" secondAttribute="bottom" constant="17" id="7oD-EI-Udt"/>
+                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="bottom" secondItem="QUk-zj-yKs" secondAttribute="bottom" constant="426" id="0Jd-cq-EPL"/>
                             <constraint firstItem="i2M-mv-Sct" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="90" id="8ez-qu-F4l"/>
-                            <constraint firstItem="QUk-zj-yKs" firstAttribute="top" secondItem="i2M-mv-Sct" secondAttribute="bottom" constant="24" id="CVy-O3-6bQ"/>
+                            <constraint firstItem="QUk-zj-yKs" firstAttribute="top" secondItem="i2M-mv-Sct" secondAttribute="bottom" constant="33" id="CVy-O3-6bQ"/>
                             <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="l38-27-znh" secondAttribute="trailing" constant="62" id="KtC-x4-zJA"/>
                             <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="QUk-zj-yKs" secondAttribute="trailing" constant="137" id="L2F-Z3-fqS"/>
                             <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="i2M-mv-Sct" secondAttribute="trailing" constant="91" id="Mql-gO-8ub"/>
-                            <constraint firstItem="FPR-he-wsU" firstAttribute="centerX" secondItem="tWY-Z1-f8T" secondAttribute="centerX" id="QHk-3k-vJU"/>
                             <constraint firstItem="l38-27-znh" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="61" id="lj0-CK-zxE"/>
                             <constraint firstItem="QUk-zj-yKs" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="136" id="mbP-Eh-dgn"/>
-                            <constraint firstItem="i2M-mv-Sct" firstAttribute="top" secondItem="l38-27-znh" secondAttribute="bottom" constant="22" id="qto-0x-7EV"/>
+                            <constraint firstItem="i2M-mv-Sct" firstAttribute="top" secondItem="l38-27-znh" secondAttribute="bottom" constant="25" id="qto-0x-7EV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KY9-Rv-Fjo"/>
                     </view>
