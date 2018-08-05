@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRx-0Z-zIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-900"/>
+            <point key="canvasLocation" x="-110" y="-900"/>
         </scene>
         <!--Messages-->
         <scene sceneID="7yh-c7-Tfk">
@@ -88,7 +88,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNl-AF-kIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-900"/>
+            <point key="canvasLocation" x="1242" y="-900"/>
+        </scene>
+        <!--Photo -->
+        <scene sceneID="E32-QA-uge">
+            <objects>
+                <viewController id="aNx-eR-GZg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S5P-23-DUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.2901960784" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zcK-BA-uNW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Photo " landscapeImage="tab_plus_black" selectedImage="tab_plus_black" id="p7B-Mm-n1a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqK-Di-UZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-900"/>
         </scene>
         <!--profile-->
         <scene sceneID="Rtm-8w-HGq">
@@ -189,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7R-oV-OVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="-900"/>
+            <point key="canvasLocation" x="542" y="-900"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="ad9-Ap-eGP">
@@ -202,9 +218,10 @@
                         <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="VCf-bw-13S" kind="relationship" relationship="viewControllers" id="3sB-IC-pco"/>
                         <segue destination="qaS-Cp-k78" kind="relationship" relationship="viewControllers" id="pne-cM-Rfx"/>
+                        <segue destination="VCf-bw-13S" kind="relationship" relationship="viewControllers" id="3sB-IC-pco"/>
                         <segue destination="tii-T2-PtM" kind="relationship" relationship="viewControllers" id="8tg-nE-npI"/>
+                        <segue destination="aNx-eR-GZg" kind="relationship" relationship="viewControllers" id="Duc-xh-EdD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZy-YH-jjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,6 +233,7 @@
         <image name="ProPic" width="203" height="203"/>
         <image name="messages" width="215" height="187"/>
         <image name="tab_home_black" width="25" height="25"/>
+        <image name="tab_plus_black" width="25" height="25"/>
         <image name="tab_profile_black" width="25" height="25"/>
     </resources>
 </document>

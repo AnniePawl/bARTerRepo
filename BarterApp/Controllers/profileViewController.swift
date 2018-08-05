@@ -24,6 +24,8 @@ class ProfileViewController : UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
         
+      
+        
         profilePic.layer.cornerRadius = 60
         profilePic.clipsToBounds = true
     
