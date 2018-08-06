@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VCf-bw-13S">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--profile-->
+        <scene sceneID="Rtm-8w-HGq">
+            <objects>
+                <viewController id="VCf-bw-13S" customClass="ProfileViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dxd-wJ-4wc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeI-Ja-1Kz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="160"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ae-BL-8HA">
+                                        <rect key="frame" x="190" y="27" width="159" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="location " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-Vx-Bm6">
+                                        <rect key="frame" x="190" y="65" width="159" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProPic" translatesAutoresizingMaskIntoConstraints="NO" id="lIO-LL-aFh">
+                                        <rect key="frame" x="28" y="15" width="120" height="120"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwB-en-b7V">
+                                        <rect key="frame" x="218" y="103" width="102" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="edit profile ">
+                                            <color key="titleColor" red="0.32156862749999998" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="editProfileButton:" destination="VCf-bw-13S" eventType="touchUpInside" id="IgS-UC-deS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.29019607843137252" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="centerY" secondItem="BeI-Ja-1Kz" secondAttribute="centerY" id="2zU-5o-pJh"/>
+                                    <constraint firstItem="lIO-LL-aFh" firstAttribute="top" secondItem="BeI-Ja-1Kz" secondAttribute="top" constant="15" id="5rY-x4-bRd"/>
+                                    <constraint firstItem="fwB-en-b7V" firstAttribute="leading" secondItem="lIO-LL-aFh" secondAttribute="trailing" constant="70" id="7o8-Wj-xoE"/>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="trailing" secondItem="6ae-BL-8HA" secondAttribute="trailing" id="8wU-PO-XjZ"/>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="top" secondItem="6ae-BL-8HA" secondAttribute="bottom" constant="8" id="CQs-zP-JlW"/>
+                                    <constraint firstItem="fwB-en-b7V" firstAttribute="centerX" secondItem="lJh-Vx-Bm6" secondAttribute="centerX" id="EoU-gw-V4I"/>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="leading" secondItem="6ae-BL-8HA" secondAttribute="leading" id="FoI-8y-dwX"/>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="leading" secondItem="6ae-BL-8HA" secondAttribute="leading" id="MtH-lW-S7R"/>
+                                    <constraint firstItem="6ae-BL-8HA" firstAttribute="leading" secondItem="lIO-LL-aFh" secondAttribute="trailing" constant="42" id="Ogf-x0-zgS"/>
+                                    <constraint firstItem="fwB-en-b7V" firstAttribute="top" secondItem="lJh-Vx-Bm6" secondAttribute="bottom" constant="8" id="PVf-eg-gO5"/>
+                                    <constraint firstItem="6ae-BL-8HA" firstAttribute="centerX" secondItem="BeI-Ja-1Kz" secondAttribute="centerX" constant="82" id="U9j-GJ-rjc"/>
+                                    <constraint firstItem="lIO-LL-aFh" firstAttribute="leading" secondItem="BeI-Ja-1Kz" secondAttribute="leading" constant="28" id="Yaz-QQ-3Ii"/>
+                                    <constraint firstItem="lJh-Vx-Bm6" firstAttribute="centerX" secondItem="BeI-Ja-1Kz" secondAttribute="centerX" constant="82" id="aqQ-2z-hm3"/>
+                                    <constraint firstAttribute="height" constant="160" id="cP1-Cb-YGC"/>
+                                    <constraint firstAttribute="bottom" secondItem="lIO-LL-aFh" secondAttribute="bottom" constant="25" id="fHs-B4-K8d"/>
+                                    <constraint firstAttribute="trailing" secondItem="lJh-Vx-Bm6" secondAttribute="trailing" constant="26" id="hHH-pw-j2e"/>
+                                    <constraint firstAttribute="bottom" secondItem="fwB-en-b7V" secondAttribute="bottom" constant="26" id="nCv-l1-9Jj"/>
+                                    <constraint firstItem="6ae-BL-8HA" firstAttribute="centerY" secondItem="BeI-Ja-1Kz" secondAttribute="centerY" constant="-38" id="raj-Nb-ytf"/>
+                                    <constraint firstItem="6ae-BL-8HA" firstAttribute="top" secondItem="BeI-Ja-1Kz" secondAttribute="top" constant="27" id="vZO-6e-Q0w"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-BP-Gak">
+                                <rect key="frame" x="0.0" y="188" width="375" height="430"/>
+                                <color key="backgroundColor" red="0.67450980390000004" green="0.74117647060000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="trailing" secondItem="dv2-E9-efN" secondAttribute="trailing" id="63b-dm-izZ"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="bottom" secondItem="dv2-E9-efN" secondAttribute="bottom" id="8LP-sl-mGq"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="bottom" secondItem="dv2-E9-efN" secondAttribute="bottom" id="IoQ-8k-zTK"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="leading" secondItem="dv2-E9-efN" secondAttribute="leading" id="J1k-ru-hbi"/>
+                            <constraint firstItem="BeI-Ja-1Kz" firstAttribute="leading" secondItem="dv2-E9-efN" secondAttribute="leading" id="JOj-Gq-T6F"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="bottom" secondItem="dv2-E9-efN" secondAttribute="bottom" id="K72-XD-oBv"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="trailing" secondItem="dv2-E9-efN" secondAttribute="trailing" id="KWn-3P-b5K"/>
+                            <constraint firstItem="BeI-Ja-1Kz" firstAttribute="top" secondItem="dv2-E9-efN" secondAttribute="top" id="P3g-KM-bXH"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="trailing" secondItem="dv2-E9-efN" secondAttribute="trailing" id="UDU-vM-ehB"/>
+                            <constraint firstItem="BeI-Ja-1Kz" firstAttribute="trailing" secondItem="dv2-E9-efN" secondAttribute="trailing" id="Upd-T1-6Y8"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="leading" secondItem="dv2-E9-efN" secondAttribute="leading" id="eaZ-UH-kKh"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="leading" secondItem="dv2-E9-efN" secondAttribute="leading" id="pDA-kx-Vb1"/>
+                            <constraint firstItem="Jiy-BP-Gak" firstAttribute="top" secondItem="BeI-Ja-1Kz" secondAttribute="bottom" constant="8" id="wf2-am-vY5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dv2-E9-efN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="profile" image="tab_profile_black" selectedImage="tab_profile_black" id="DfJ-qV-VYc"/>
+                    <connections>
+                        <outlet property="locationTextField" destination="lJh-Vx-Bm6" id="5jc-la-aSh"/>
+                        <outlet property="nameTextField" destination="6ae-BL-8HA" id="Gu9-s3-33m"/>
+                        <outlet property="profilePic" destination="lIO-LL-aFh" id="huz-SS-DYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7R-oV-OVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480.8" y="-900.00000000000011"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ProPic" width="203" height="203"/>
+        <image name="tab_profile_black" width="25" height="25"/>
+    </resources>
+</document>

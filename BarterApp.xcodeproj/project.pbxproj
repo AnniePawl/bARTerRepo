@@ -21,6 +21,7 @@
 		B82B7C35211831630041F457 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B7C34211831630041F457 /* PostImageCell.swift */; };
 		B82B7C382118D1DE0041F457 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B7C372118D1DE0041F457 /* PostHeaderCell.swift */; };
 		B82B7C3A2118FF9E0041F457 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B7C392118FF9E0041F457 /* FollowService.swift */; };
+		B82B7C3E211907ED0041F457 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82B7C3D211907ED0041F457 /* ProfilePage.storyboard */; };
 		B8316B9C21128AC70000280D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8316B9B21128AC70000280D /* Chat.swift */; };
 		B8316B9E21128B7D0000280D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8316B9D21128B7D0000280D /* Message.swift */; };
 		B837A59B2113A873003A4511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B837A59A2113A872003A4511 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		B82B7C34211831630041F457 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		B82B7C372118D1DE0041F457 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		B82B7C392118FF9E0041F457 /* FollowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
+		B82B7C3D211907ED0041F457 /* ProfilePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		B8316B9B21128AC70000280D /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B8316B9D21128B7D0000280D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B837A59A2113A872003A4511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B837A59A2113A872003A4511 /* Assets.xcassets */,
 				B82AC5FC2107DDC900F19F6F /* LaunchScreen.storyboard */,
 				B8258684210A917500EDDD99 /* Home.storyboard */,
+				B82B7C3D211907ED0041F457 /* ProfilePage.storyboard */,
 				B82B7C32211829D80041F457 /* HomeBase.storyboard */,
 			);
 			path = Storyboards;
@@ -291,6 +294,7 @@
 				B82AC5FE2107DDC900F19F6F /* LaunchScreen.storyboard in Resources */,
 				B8258685210A917500EDDD99 /* Home.storyboard in Resources */,
 				B82B7C33211829D80041F457 /* HomeBase.storyboard in Resources */,
+				B82B7C3E211907ED0041F457 /* ProfilePage.storyboard in Resources */,
 				B845792D21080C28002BBBE3 /* GoogleService-Info.plist in Resources */,
 				B82AC5F92107DDC500F19F6F /* Main.storyboard in Resources */,
 				B837A59B2113A873003A4511 /* Assets.xcassets in Resources */,
