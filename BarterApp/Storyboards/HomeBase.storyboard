@@ -29,16 +29,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-6R-jrN">
-                                                    <rect key="frame" x="0.0" y="11" width="375" height="364"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-6R-jrN" customClass="postImageView" customModule="BarterApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="k9l-6R-jrN" secondAttribute="trailing" id="Hvf-m1-sBF"/>
+                                                <constraint firstAttribute="bottom" secondItem="k9l-6R-jrN" secondAttribute="bottom" id="hJ3-tc-sVE"/>
+                                                <constraint firstItem="k9l-6R-jrN" firstAttribute="leading" secondItem="Kdk-ai-9ND" secondAttribute="leading" id="seO-Gu-IF3"/>
+                                                <constraint firstItem="k9l-6R-jrN" firstAttribute="top" secondItem="Kdk-ai-9ND" secondAttribute="top" id="yG1-it-7GQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageView" destination="k9l-6R-jrN" id="q4c-fG-emu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="qaS-Cp-k78" id="tOH-Va-ibp"/>
+                                    <outlet property="dataSource" destination="qaS-Cp-k78" id="bHH-O5-ZzL"/>
                                     <outlet property="delegate" destination="qaS-Cp-k78" id="sJj-vM-mOT"/>
                                 </connections>
                             </tableView>

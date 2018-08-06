@@ -11,7 +11,6 @@ import FirebaseDatabase.FIRDataSnapshot
 
 class Post {
     
-    
 
     var dictValue: [String : Any] {
         let createdAgo = creationDate.timeIntervalSince1970
