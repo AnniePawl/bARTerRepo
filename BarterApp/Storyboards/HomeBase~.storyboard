@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="6zY-sg-azc">
+            <objects>
+                <viewController id="qaS-Cp-k78" customClass="HomeViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Awp-af-875">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="W3W-8C-Tgl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="51S-Tm-cLK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRx-0Z-zIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-173"/>
+        </scene>
         <!--Messages-->
         <scene sceneID="7yh-c7-Tfk">
             <objects>
@@ -197,7 +213,7 @@
                         <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="dBZ-Jy-g1b" kind="relationship" relationship="viewControllers" id="pne-cM-Rfx"/>
+                        <segue destination="hKk-Kv-HnQ" kind="relationship" relationship="viewControllers" id="pne-cM-Rfx"/>
                         <segue destination="VCf-bw-13S" kind="relationship" relationship="viewControllers" id="3sB-IC-pco"/>
                         <segue destination="tii-T2-PtM" kind="relationship" relationship="viewControllers" id="8tg-nE-npI"/>
                         <segue destination="aNx-eR-GZg" kind="relationship" relationship="viewControllers" id="Duc-xh-EdD"/>
@@ -207,13 +223,22 @@
             </objects>
             <point key="canvasLocation" x="994" y="-1674"/>
         </scene>
-        <!--HomeBase-->
-        <scene sceneID="IvL-GN-yO7">
+        <!--Home-->
+        <scene sceneID="B34-BA-I8g">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeBase" id="dBZ-Jy-g1b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5f9-CR-J8A"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ms-TE-cbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hKk-Kv-HnQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tab_home_black" selectedImage="tab_home_black" id="AtS-2o-7hT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v0k-JA-Bz5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qaS-Cp-k78" kind="relationship" relationship="rootViewController" id="I39-9c-Kz0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VxZ-gY-v1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="702" y="-900"/>
         </scene>
@@ -221,6 +246,7 @@
     <resources>
         <image name="ProPic" width="203" height="203"/>
         <image name="messages" width="215" height="187"/>
+        <image name="tab_home_black" width="25" height="25"/>
         <image name="tab_plus_black" width="25" height="25"/>
         <image name="tab_profile_black" width="25" height="25"/>
     </resources>
