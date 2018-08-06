@@ -160,6 +160,7 @@
 		B82AC5F22107DDC500F19F6F /* BarterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B82B7C36211831DE0041F457 /* Views */,
 				B849CEF12114317500B18B3F /* Helpers */,
 				B89C5B5E210FDC0200972634 /* Extensions */,
 				B89C5B5B210FD66100972634 /* Supporting */,
@@ -170,9 +171,16 @@
 				B82AC5F32107DDC500F19F6F /* AppDelegate.swift */,
 				B845792C21080C28002BBBE3 /* GoogleService-Info.plist */,
 				B82AC5FF2107DDC900F19F6F /* Info.plist */,
-				B82B7C34211831630041F457 /* PostImageCell.swift */,
 			);
 			path = BarterApp;
+			sourceTree = "<group>";
+		};
+		B82B7C36211831DE0041F457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B82B7C34211831630041F457 /* PostImageCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B849CEF12114317500B18B3F /* Helpers */ = {
