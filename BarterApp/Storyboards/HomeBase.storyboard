@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Barter-->
         <scene sceneID="6zY-sg-azc">
             <objects>
                 <viewController id="qaS-Cp-k78" customClass="HomeViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W3W-8C-Tgl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="51S-Tm-cLK"/>
+                    <navigationItem key="navigationItem" title="Barter" id="51S-Tm-cLK"/>
                     <connections>
                         <outlet property="tableView" destination="zmX-XY-25v" id="qpm-a9-3t1"/>
                     </connections>
