@@ -9,7 +9,8 @@
 import UIKit
 
 class MGPhotoHelper: NSObject {
-    
+  
+
     // MARK: - Properties
     
     var completionHandler: ((UIImage) -> Void)?
