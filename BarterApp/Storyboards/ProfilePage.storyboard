@@ -83,6 +83,43 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-yy-tij">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="435"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="71" id="fFb-uZ-WkM">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="71"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fFb-uZ-WkM" id="5UI-Gi-icI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sed-GT-PWd">
+                                                            <rect key="frame" x="15" y="25" width="223" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kP-jn-Vgh">
+                                                            <rect key="frame" x="250" y="10" width="115" height="50.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="2RE-FM-z5y"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="sed-GT-PWd" firstAttribute="top" secondItem="5UI-Gi-icI" secondAttribute="top" constant="25" id="ARv-90-IiI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1kP-jn-Vgh" secondAttribute="trailing" constant="10" id="DHH-U1-Gkg"/>
+                                                        <constraint firstItem="1kP-jn-Vgh" firstAttribute="top" secondItem="5UI-Gi-icI" secondAttribute="top" constant="10" id="KQz-OW-Od0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sed-GT-PWd" secondAttribute="bottom" constant="24.5" id="PPK-i4-2fr"/>
+                                                        <constraint firstItem="1kP-jn-Vgh" firstAttribute="leading" secondItem="sed-GT-PWd" secondAttribute="trailing" constant="12" id="XSC-wE-boH"/>
+                                                        <constraint firstItem="sed-GT-PWd" firstAttribute="leading" secondItem="5UI-Gi-icI" secondAttribute="leading" constant="15" id="YSB-Kp-mWa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1kP-jn-Vgh" secondAttribute="bottom" constant="10" id="ydX-jG-vpE"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="VCf-bw-13S" id="ZoU-23-pdM"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.67450980390000004" green="0.74117647060000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
