@@ -38,8 +38,11 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath)
-        cell.backgroundColor = .red
+        let post = posts[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath) as! PostImageCell
+        
+        let imageURL = URL(string: post.imageURL)
+        cell.postImageView.kf.setImage(with: imageURL)
         
         return cell
     }
