@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     
     }
     @IBAction func loginRegister(_ sender: UIButton) {
+        sender.pulsate()
         print("button pressed")
         //  Added below to access FUIAuth default, auth UI singleton, set FUIAuth's singleton delegate and present auth view controller
         
@@ -51,7 +52,7 @@ extension LoginViewController: FUIAuthDelegate {
         let userRef = Database.database().reference().child("users").child(user.uid)
         userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
             if let user = User(snapshot: snapshot) {
-                 User.setCurrent(user)
+                User.setCurrent(user, writeToUserDefaults: true)
                 let initialViewController = UIStoryboard.initialViewController(for: .home)
                 self.view.window?.rootViewController = initialViewController
                 self.view.window?.makeKeyAndVisible()

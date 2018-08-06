@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,51 +19,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWY-lj-T6m">
-                                <rect key="frame" x="0.0" y="20" width="375" height="265"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOX-f4-rsT">
-                                        <rect key="frame" x="57" y="53" width="262" height="160"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bARTer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-zY-k6U">
-                                                <rect key="frame" x="0.0" y="0.0" width="262" height="102"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="85"/>
-                                                <color key="textColor" red="1" green="0.87058823529411766" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="let's trade " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-8q-dKa">
-                                                <rect key="frame" x="44" y="112" width="173.5" height="48"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="40"/>
-                                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="bOX-f4-rsT" firstAttribute="centerX" secondItem="jWY-lj-T6m" secondAttribute="centerX" id="8fy-KG-ech"/>
-                                    <constraint firstItem="bOX-f4-rsT" firstAttribute="centerY" secondItem="jWY-lj-T6m" secondAttribute="centerY" id="aRE-eZ-AIa"/>
-                                    <constraint firstItem="bOX-f4-rsT" firstAttribute="top" secondItem="jWY-lj-T6m" secondAttribute="top" constant="53" id="kb5-cM-ntb"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRd-7x-9oX">
-                                <rect key="frame" x="62" y="551" width="250" height="41"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRd-7x-9oX">
+                                <rect key="frame" x="32" y="552" width="311" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
                                 <state key="normal" title="Login or Register ">
-                                    <color key="titleColor" red="0.32156862745098036" green="0.40784313725490196" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginRegister:" destination="plz-3o-s7d" eventType="touchUpInside" id="w7H-1h-KlF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="let's trade " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-8q-dKa">
+                                <rect key="frame" x="42" y="466" width="290" height="46"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="40"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Wv5-mu-bKT">
+                                <rect key="frame" x="0.0" y="60" width="375" height="378"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.67450980390000004" green="0.74117647060000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="L14-4Z-wAX" firstAttribute="bottom" secondItem="GRd-7x-9oX" secondAttribute="bottom" constant="247" id="Bnf-gR-7sF"/>
-                            <constraint firstAttribute="trailing" secondItem="jWY-lj-T6m" secondAttribute="trailing" id="KpY-fV-eKN"/>
-                            <constraint firstItem="jWY-lj-T6m" firstAttribute="top" secondItem="L14-4Z-wAX" secondAttribute="top" id="LJ9-gq-l9P"/>
-                            <constraint firstItem="jWY-lj-T6m" firstAttribute="leading" secondItem="3sh-w9-Qg5" secondAttribute="leading" id="mOn-1m-tIj"/>
-                            <constraint firstItem="jWY-lj-T6m" firstAttribute="centerX" secondItem="GRd-7x-9oX" secondAttribute="centerX" id="pfM-Et-KEu"/>
+                            <constraint firstItem="Wv5-mu-bKT" firstAttribute="leading" secondItem="L14-4Z-wAX" secondAttribute="leading" id="0xf-fw-9ar"/>
+                            <constraint firstItem="GRd-7x-9oX" firstAttribute="top" secondItem="TUG-8q-dKa" secondAttribute="bottom" constant="40" id="4Zg-0d-5ca"/>
+                            <constraint firstItem="TUG-8q-dKa" firstAttribute="top" secondItem="Wv5-mu-bKT" secondAttribute="bottom" constant="28" id="5Sa-Ut-ut9"/>
+                            <constraint firstItem="L14-4Z-wAX" firstAttribute="trailing" secondItem="GRd-7x-9oX" secondAttribute="trailing" constant="32" id="DqP-8F-7V1"/>
+                            <constraint firstItem="L14-4Z-wAX" firstAttribute="bottom" secondItem="GRd-7x-9oX" secondAttribute="bottom" constant="66" id="MqH-KW-xpG"/>
+                            <constraint firstItem="L14-4Z-wAX" firstAttribute="trailing" secondItem="Wv5-mu-bKT" secondAttribute="trailing" id="Mu1-WB-vAz"/>
+                            <constraint firstItem="GRd-7x-9oX" firstAttribute="leading" secondItem="L14-4Z-wAX" secondAttribute="leading" constant="32" id="RUX-kd-IIW"/>
+                            <constraint firstItem="TUG-8q-dKa" firstAttribute="leading" secondItem="L14-4Z-wAX" secondAttribute="leading" constant="42" id="Vde-ze-TEt"/>
+                            <constraint firstItem="L14-4Z-wAX" firstAttribute="trailing" secondItem="TUG-8q-dKa" secondAttribute="trailing" constant="43" id="qxb-XL-C3c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L14-4Z-wAX"/>
                     </view>
@@ -79,41 +73,53 @@
         <scene sceneID="d83-5a-9Vj">
             <objects>
                 <viewController id="j70-Sh-5MG" customClass="CreateUsernameViewController" customModule="BarterApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tWY-Z1-f8T">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="tWY-Z1-f8T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="create a username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-27-znh">
-                                <rect key="frame" x="66" y="206" width="243" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-mv-Sct">
-                                <rect key="frame" x="101" y="352" width="180" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-mv-Sct">
+                                <rect key="frame" x="90" y="128" width="194" height="30"/>
+                                <color key="backgroundColor" name="tcWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-zj-yKs">
-                                <rect key="frame" x="127" y="390" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Next"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="create a username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-27-znh">
+                                <rect key="frame" x="61" y="68" width="252" height="35"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-zj-yKs">
+                                <rect key="frame" x="136" y="191" width="102" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="done!">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="j70-Sh-5MG" eventType="touchUpInside" id="1Qw-gA-3zC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bARTer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elk-om-SFm">
-                                <rect key="frame" x="56" y="58" width="262" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="85"/>
-                                <color key="textColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
+                        <color key="backgroundColor" red="0.67450980390000004" green="0.74117647060000003" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="bottom" secondItem="QUk-zj-yKs" secondAttribute="bottom" constant="426" id="0Jd-cq-EPL"/>
+                            <constraint firstItem="i2M-mv-Sct" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="90" id="8ez-qu-F4l"/>
+                            <constraint firstItem="QUk-zj-yKs" firstAttribute="top" secondItem="i2M-mv-Sct" secondAttribute="bottom" constant="33" id="CVy-O3-6bQ"/>
+                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="l38-27-znh" secondAttribute="trailing" constant="62" id="KtC-x4-zJA"/>
+                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="QUk-zj-yKs" secondAttribute="trailing" constant="137" id="L2F-Z3-fqS"/>
+                            <constraint firstItem="KY9-Rv-Fjo" firstAttribute="trailing" secondItem="i2M-mv-Sct" secondAttribute="trailing" constant="91" id="Mql-gO-8ub"/>
+                            <constraint firstItem="l38-27-znh" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="61" id="lj0-CK-zxE"/>
+                            <constraint firstItem="QUk-zj-yKs" firstAttribute="leading" secondItem="KY9-Rv-Fjo" secondAttribute="leading" constant="136" id="mbP-Eh-dgn"/>
+                            <constraint firstItem="i2M-mv-Sct" firstAttribute="top" secondItem="l38-27-znh" secondAttribute="bottom" constant="25" id="qto-0x-7EV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KY9-Rv-Fjo"/>
                     </view>
                     <connections>
@@ -143,4 +149,10 @@
             <point key="canvasLocation" x="1345" y="-466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Banner" width="383" height="378"/>
+        <namedColor name="tcWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
