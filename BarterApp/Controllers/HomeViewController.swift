@@ -17,10 +17,18 @@ class HomeViewController: UIViewController {
     
     var posts = [Post]()
 
+    func configureTableView() {
+        // remove separators for empty cells
+        tableView.tableFooterView = UIView()
+        // remove separators from cells
+        tableView.separatorStyle = .none
+    }
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+          configureTableView()
        
         UserService.posts(for: User.current) { (posts) in
             self.posts = posts
