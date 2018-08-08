@@ -1,4 +1,7 @@
+
+
 platform :ios, '9.0'
+
 
 target 'BarterApp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -10,5 +13,6 @@ target 'BarterApp' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
+pod 'Kingfisher', '~> 4.0'
+	
 end
