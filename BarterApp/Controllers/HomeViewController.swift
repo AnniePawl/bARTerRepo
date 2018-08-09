@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     
     var posts = [Post]()
+    var count: Int = 0
 
 //    func configureTableView() {
 //        // remove separators for empty cells
@@ -35,7 +36,7 @@ class HomeViewController: UIViewController {
         UserService.posts(for: User.current) { (posts) in
             self.posts = posts
             
-            let post = posts[0]
+            let post = posts[self.count]
             let imageURL = URL(string: post.imageURL)
             self.itemImage.kf.setImage(with: imageURL)
         }
@@ -61,15 +62,19 @@ class HomeViewController: UIViewController {
             case UISwipeGestureRecognizerDirection.right:
                 //write your logic for right swipe
                 print("Swiped right")
-                let post = posts[1]
-                let imageURL = URL(string: post.imageURL)
+                count += 1
+                let post = posts[count]
+                let imageURL = URL(string: (post.imageURL))
                 self.itemImage.kf.setImage(with: imageURL)
                 
             case UISwipeGestureRecognizerDirection.left:
                 //write your logic for left swipe
                 print("Swiped left")
-                let post = posts[1]
-                let imageURL = URL(string: post.imageURL)
+                if count > 0 {
+                    count -= 1
+                }
+                let post = posts[count]
+                let imageURL = URL(string: (post.imageURL))
                 self.itemImage.kf.setImage(with: imageURL)
                 
             default:
