@@ -18,81 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zmX-XY-25v">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="54" id="14g-Dl-ikD" customClass="PostHeaderCell" customModule="BarterApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="54"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="14g-Dl-ikD" id="sRQ-OY-2eV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwz-Ys-JOO">
-                                                    <rect key="frame" x="316" y="4" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="5FU-Bs-OLC"/>
-                                                        <constraint firstAttribute="width" constant="44" id="Ofd-g8-B4C"/>
-                                                    </constraints>
-                                                    <state key="normal" image="btn_options_black">
-                                                        <color key="titleColor" red="0.19215686274509802" green="0.29019607843137252" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="optionsButtonTapped:" destination="14g-Dl-ikD" eventType="touchUpInside" id="OoF-FV-PjN"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Iwz-Ys-JOO" secondAttribute="trailing" constant="15" id="YZj-N4-Mdh"/>
-                                                <constraint firstItem="Iwz-Ys-JOO" firstAttribute="centerY" secondItem="sRQ-OY-2eV" secondAttribute="centerY" id="jOJ-Is-B10"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="2N0-QN-lE6" customClass="PostImageCell" customModule="BarterApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="82" width="375" height="375"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2N0-QN-lE6" id="Kdk-ai-9ND">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-6R-jrN" customClass="postImageView" customModule="BarterApp" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="k9l-6R-jrN" secondAttribute="trailing" id="Hvf-m1-sBF"/>
-                                                <constraint firstAttribute="bottom" secondItem="k9l-6R-jrN" secondAttribute="bottom" id="hJ3-tc-sVE"/>
-                                                <constraint firstItem="k9l-6R-jrN" firstAttribute="leading" secondItem="Kdk-ai-9ND" secondAttribute="leading" id="seO-Gu-IF3"/>
-                                                <constraint firstItem="k9l-6R-jrN" firstAttribute="top" secondItem="Kdk-ai-9ND" secondAttribute="top" id="yG1-it-7GQ"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="postImageView" destination="k9l-6R-jrN" id="q4c-fG-emu"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="qaS-Cp-k78" id="bHH-O5-ZzL"/>
-                                    <outlet property="delegate" destination="qaS-Cp-k78" id="sJj-vM-mOT"/>
-                                </connections>
-                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-ER-0mL">
+                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="9cu-cm-FJV"/>
+                                    <constraint firstAttribute="height" constant="300" id="nbv-YF-JSN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="top" secondItem="W3W-8C-Tgl" secondAttribute="top" id="72Y-JG-OGf"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="leading" secondItem="W3W-8C-Tgl" secondAttribute="leading" id="I3g-y7-ans"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="top" secondItem="W3W-8C-Tgl" secondAttribute="top" id="JMp-G9-M6K"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="leading" secondItem="W3W-8C-Tgl" secondAttribute="leading" id="YJ5-wM-xVh"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="bottom" secondItem="W3W-8C-Tgl" secondAttribute="bottom" id="aBR-tk-7bl"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="bottom" secondItem="W3W-8C-Tgl" secondAttribute="bottom" id="g49-F4-WnO"/>
-                            <constraint firstItem="zmX-XY-25v" firstAttribute="trailing" secondItem="W3W-8C-Tgl" secondAttribute="trailing" id="ke1-qM-3Ae"/>
+                            <constraint firstItem="W3E-ER-0mL" firstAttribute="centerY" secondItem="Awp-af-875" secondAttribute="centerY" id="dhr-nO-maF"/>
+                            <constraint firstItem="W3E-ER-0mL" firstAttribute="centerX" secondItem="Awp-af-875" secondAttribute="centerX" id="moo-o4-5JY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W3W-8C-Tgl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Barter" id="51S-Tm-cLK"/>
                     <connections>
-                        <outlet property="tableView" destination="zmX-XY-25v" id="qpm-a9-3t1"/>
+                        <outlet property="itemImage" destination="W3E-ER-0mL" id="Nc3-Vo-O0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRx-0Z-zIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,7 +64,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
 </document>
