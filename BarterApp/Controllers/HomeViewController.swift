@@ -61,10 +61,16 @@ class HomeViewController: UIViewController {
             case UISwipeGestureRecognizerDirection.right:
                 //write your logic for right swipe
                 print("Swiped right")
+                let post = posts[1]
+                let imageURL = URL(string: post.imageURL)
+                self.itemImage.kf.setImage(with: imageURL)
                 
             case UISwipeGestureRecognizerDirection.left:
                 //write your logic for left swipe
                 print("Swiped left")
+                let post = posts[1]
+                let imageURL = URL(string: post.imageURL)
+                self.itemImage.kf.setImage(with: imageURL)
                 
             default:
                 break
