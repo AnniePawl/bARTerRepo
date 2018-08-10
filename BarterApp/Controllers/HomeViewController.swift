@@ -43,6 +43,27 @@ class HomeViewController: UIViewController {
         
     }
     
+    
+    @IBAction func swipeRight(_ sender: UIButton) {
+         print("Tapped Right")
+        count += 1
+        let post = posts[count]
+        let imageURL = URL(string: (post.imageURL))
+        self.itemImage.kf.setImage(with: imageURL)
+    }
+    
+    @IBAction func swipeLeft(_ sender: UIButton) {
+         print("Tapped Left")
+        if count > 0 {
+            count -= 1
+        }
+        let post = posts[count]
+        let imageURL = URL(string: (post.imageURL))
+        self.itemImage.kf.setImage(with: imageURL)
+    }
+    
+    
+    
     func setupSwipeGestures() {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
