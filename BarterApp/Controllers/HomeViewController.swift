@@ -13,6 +13,7 @@ import Kingfisher
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var swipeImage: UIImageView!
     // MARK: - Properties
     
     var posts = [Post]()
@@ -30,6 +31,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+     
+//    swipeImage.layer.masksToBounds = true
+//    swipeImage.layer.cornerRadius = 10
+    swipeImage.layer.shadowRadius = 5
+    swipeImage.layer.shadowOpacity = 1
+        
         
         setupSwipeGestures()
 
@@ -102,6 +110,17 @@ class HomeViewController: UIViewController {
                 break
             }
         }
+    }
+}
+
+extension UIImageView {
+    public func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let maskPath = UIBezierPath(roundedRect: bounds,
+                                    byRoundingCorners: corners,
+                                    cornerRadii: CGSize(width: radius, height: radius))
+        let shape = CAShapeLayer()
+        shape.path = maskPath.cgPath
+        layer.mask = shape
     }
 }
 
