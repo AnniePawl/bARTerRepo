@@ -39,6 +39,7 @@
 		B89C5B5D210FD69B00972634 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C5B5C210FD69B00972634 /* Constants.swift */; };
 		B89C5B60210FDC2300972634 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C5B5F210FDC2300972634 /* Storyboard+Utility.swift */; };
 		B8A37E3421163FDE00508E6A /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A37E3321163FDE00508E6A /* profileViewController.swift */; };
+		B8C966C8211D21BD004E98C2 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C966C7211D21BD004E98C2 /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		B89C5B5C210FD69B00972634 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B89C5B5F210FDC2300972634 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		B8A37E3321163FDE00508E6A /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		B8C966C7211D21BD004E98C2 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		CE0878F7FD406DE42F3905E8 /* Pods-BarterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarterApp/Pods-BarterApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 				B82B7C34211831630041F457 /* PostImageCell.swift */,
 				B82B7C372118D1DE0041F457 /* PostHeaderCell.swift */,
 				B82B7C3F211909840041F457 /* FriendCell.swift */,
+				B8C966C7211D21BD004E98C2 /* MessageTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				B82B7C40211909840041F457 /* FriendCell.swift in Sources */,
 				B849CEF32114322200B18B3F /* BPhotoHelper.swift in Sources */,
 				B849CEEC21142E3900B18B3F /* PostService.swift in Sources */,
+				B8C966C8211D21BD004E98C2 /* MessageTableViewCell.swift in Sources */,
 				B8453E402111677A00BCEC01 /* HomePageViewController.swift in Sources */,
 				B8258681210A876400EDDD99 /* UserService.swift in Sources */,
 				B849CEE82113C22600B18B3F /* Animations.swift in Sources */,
